@@ -134,7 +134,7 @@ adf.test(data, alternative ="stationary")
 fc <- forecast(model, h = 36)
 fc
 
-plot(data, main ="BBCA.JK 5 year Forecast", ylim = c(0, 50000), xlim = c(2011,2025))
+plot(data, main ="BBCA.JK 5 year Forecast",  ylab = "Stock Price (IDR)", xlab ="Year", ylim = c(0, 50000), xlim = c(2011,2025))
 lines(fc$mean, col = 2)
 
 
